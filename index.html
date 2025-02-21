@@ -6,8 +6,14 @@
     <title>Website Launcher</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen p-6">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-gray-100 min-h-screen p-6 relative">
+    <!-- Watermark Background -->
+    <div class="fixed inset-0 pointer-events-none" style="z-index: 0; opacity: 0.03;">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-96 h-96 bg-contain bg-no-repeat bg-center" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAgMjQwIj48cGF0aCBmaWxsPSIjMDAyMjQ0IiBkPSJNMTIwIDAgTDI0MCAxMjAgTDEyMCAyNDAgTDAgMTIwIFoiLz48cGF0aCBmaWxsPSIjRkZBNTAwIiBkPSJNNjAgNjAgTDE4MCAxODAgTDYwIDE4MCBaIi8+PC9zdmc+');"></div>
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto relative z-10">
         <h1 class="text-3xl font-bold text-center mb-8">Website Launcher</h1>
         
         <!-- Sort and Filter Controls -->
